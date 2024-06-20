@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = () => {
     return (
-        <div className="card w-64 bg-base-100 shadow-xl">
+        <div className="card w-64 bg-base-300 shadow-2xl">
             <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">Shoes!</h2>

@@ -1,16 +1,25 @@
 import React from 'react'
 
-import Section from '../shared/Section'
+import Section from '@/app/components/shared/Section'
 import Card from '@/app/components/shared/Card'
+import Heading from '@/app/components/shared/text/Heading'
+import Paragraph from '@/app/components/shared/text/Paragraph'
+import Row from '@/app/components/shared/containers/Row'
 
 const FeatureCards = () => {
     return (
         <Section>
-            <div className='min-h-screen flex flex-row flex-wrap justify-center items-center gap-16'>
-                <Card />
-                <Card />
-                <Card />
-            </div>
+            <article>
+                <Heading type={1}>Our Features</Heading>
+                <Paragraph>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl nec consequat ultricies, nunc purus ultricies nunc, nec ultricies nunc purus nec nunc.
+                </Paragraph>
+                <Row>
+                    <Card />
+                    <Card />
+                    <Card />
+                </Row>
+            </article>
         </Section>
     )
 }
