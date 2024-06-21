@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Section from '@/app/components/shared/Section'
+import Section from '@/app/components/shared/containers/Section'
 import Card from '@/app/components/shared/Card'
 import Heading from '@/app/components/shared/text/Heading'
 import Paragraph from '@/app/components/shared/text/Paragraph'

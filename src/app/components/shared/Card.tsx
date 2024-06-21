@@ -1,18 +1,31 @@
 import React from 'react'
 
-const Card = () => {
+export const Image = ({ src, alt } : { src : string, alt : string }) => (
+    <figure><img src={src} alt={alt} /></figure>
+)
+
+export const Content = ({ children } : { children : React.ReactNode}) => (
+    <div className="card-body">
+        {children}
+    </div>
+)
+
+export const Title = ({ children } : { children : React.ReactNode}) => (
+    <h2 className="card-title">{children}</h2>
+)
+
+export const Actions = ({ children } : { children : React.ReactNode}) => (
+    <div className="card-actions justify-end">
+        {children}
+    </div>
+)
+
+const Card = ({ children } : { children : React.ReactNode}) => {
     return (
         <div className="card w-64 bg-base-300 shadow-2xl">
-            <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                </div>
-            </div>
+            {children}
         </div>
     )
 }
 
-export default Card
+export default { Card, Image, Content, Title, Actions}
