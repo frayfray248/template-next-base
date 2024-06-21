@@ -16,7 +16,7 @@ const Carousel = () => {
     const carouselRef = useRef(null);
     const [scrollPosition, setScrollPosition] = useState(0);
 
-    const scroll = (direction : string) => {
+    const scroll = (direction: string) => {
         if (carouselRef.current) {
             const { current } = carouselRef as React.RefObject<HTMLDivElement>;
             if (!current) return; // Add this line to handle the case when current is null
@@ -28,6 +28,7 @@ const Carousel = () => {
     };
 
     return (
+        <div className='relative'>
         <div className="carousel rounded-box" ref={carouselRef} style={{ display: 'flex', overflowX: 'auto' }}>
             <div className="absolute flex justify-between transform -translate-y-1/2 left-10 top-1/2"><button className="btn btn-circle text-xl" onClick={() => scroll('left')}>❮</button></div>
             {images.map((image, index) => (
@@ -36,6 +37,7 @@ const Carousel = () => {
                 </div>
             ))}
             <div className="absolute flex justify-between transform -translate-y-1/2 right-10 top-1/2"><button className="btn btn-circle text-xl" onClick={() => scroll('right')}>❯</button></div>
+        </div>
         </div>
     );
 };
