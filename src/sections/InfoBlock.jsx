@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Section from '@/app/components/shared/containers/Section'
-import Image from '@/app/components/shared/Image'
-import Row from '@/app/components/shared/containers/Row'
-import Col from '@/app/components/shared/containers/Col'
+import Section from '@/components/shared/containers/Section'
+import Image from '@/components/shared/Image'
+import Row from '@/components/shared/containers/Row'
+import Col from '@/components/shared/containers/Col'
 
 const InfoBlock = () => {
     return (

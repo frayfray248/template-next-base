@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Section from '@/app/components/shared/containers/Section'
-import Timeline from '../shared/Timeline'
+import Section from '@/components/shared/containers/Section'
+import Timeline from '@/components/shared/Timeline'
 
 const FeatureTimeline = () => {
     return (

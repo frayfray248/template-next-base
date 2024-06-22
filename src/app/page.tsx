@@ -1,12 +1,9 @@
 // components
-import LandingHero from './components/sections/LandingHero';
-import FeatureCards from '@/app/components/sections/FeatureCards'
-import FeatureCarousel from "./components/sections/FeatureCarousel";
-import FeatureTimeline from "./components/sections/FeatureTimeline";
-import Contact from './components/sections/Contact';
-import Hr from '@/app/components/shared/Hr';
-import Portfolio from '@/app/components/sections/Portfolio';
-import InfoBlock from '@/app/components/sections/InfoBlock';
+import LandingHero from '@/sections/LandingHero';
+import Contact from '@/sections/Contact';
+import Hr from '@/components/shared/Hr';
+import Portfolio from '@/sections/Portfolio';
+import InfoBlock from '@/sections/InfoBlock';
 
 export default function Home() {
     return (

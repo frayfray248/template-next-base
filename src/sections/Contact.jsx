@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HeroContact from '@/app/components/sections/heroes/HeroContact'
+import HeroContact from '@/sections/heroes/HeroContact'
 
 const Contact = () => {
   return (

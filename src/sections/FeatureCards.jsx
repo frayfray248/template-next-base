@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Section from '@/app/components/shared/containers/Section'
-import Card from '@/app/components/shared/Card'
-import Heading from '@/app/components/shared/text/Heading'
-import Paragraph from '@/app/components/shared/text/Paragraph'
-import Row from '@/app/components/shared/containers/Row'
+import Section from '@/components/shared/containers/Section'
+import Card from '@/components/shared/Card'
+import Heading from '@/components/shared/text/Heading'
+import Paragraph from '@/components/shared/text/Paragraph'
+import Row from '@/components/shared/containers/Row'
 
 const FeatureCards = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Section from '@/app/components/shared/containers/Section'
-import Carousel from '../shared/Carousel'
-import Heading from '../shared/text/Heading'
-import Paragraph from '../shared/text/Paragraph'
+import Section from '@/components/shared/containers/Section'
+import Carousel from '@/components/shared/Carousel'
+import Heading from '@/components/shared/text/Heading'
+import Paragraph from '@/components/shared/text/Paragraph'
 
 const FeatureCarousel = () => {
     return (

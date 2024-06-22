@@ -1,11 +1,8 @@
 import type { Config } from "tailwindcss"
+import content from './content'
 
 const config: Config = {
-    content: [
-        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
+    content,
     theme: {
         colors: {
             'primary': '#000000', // Black

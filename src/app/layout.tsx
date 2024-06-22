@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 // components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import font from '@/font/font'
 
