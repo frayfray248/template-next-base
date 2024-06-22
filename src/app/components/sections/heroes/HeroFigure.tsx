@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeroFigure = ({ reverse } : { reverse : boolean}) => {
+const HeroFigure = ({ reverse }: { reverse: boolean }) => {
     return (
         <section className="hero min-h-screen bg-base-200">
             <article className={`hero-content max-w-4xl flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
