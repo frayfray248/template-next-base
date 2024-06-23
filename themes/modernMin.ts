@@ -11,7 +11,16 @@ const config: Config = {
             'base-200': '#ffffff', // White
         },
         extend: {
-
+            spacing: {
+                'section-max-width' : '100%',
+                'section-min-height': '0px',
+                'section-padding': '0px',
+                'row-gap' : '0px',
+                'picture-radius': '0px',
+            },
+            borderWidth: {
+                'section-border': '4px',
+            }
         },
         fontFamily: {
             sans: ['Helvetica Neue', 'Arial', 'sans-serif'], // Simple sans-serif font

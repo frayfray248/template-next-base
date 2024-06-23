@@ -6,7 +6,7 @@ import HeroFigure from '@/sections/heroes/HeroFigure'
 
 const LandingHero = () => {
   return (
-    <HeroFigure />
+    <HeroOverlayImage />
   )
 }
 
