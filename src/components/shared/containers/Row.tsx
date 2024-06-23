@@ -3,11 +3,13 @@ import React from 'react'
 const Row = ({
     children,
     breakPoint,
-    gap = "theme"
+    gap = "theme",
+    className = ""
 }: {
     children: React.ReactNode,
     breakPoint?: 'sm' | 'md' | 'lg' | 'xl' | '2xl'
-    gap? : 'theme' | '16' | '8' | '4'
+    gap? : 'theme' | '16' | '8' | '4',
+    className?: string
 }) => {
 
     const gapClass = {
@@ -26,7 +28,7 @@ const Row = ({
     }
 
     return (
-        <div className={`flex ${breakPoint ? `flex-col ${breakPointClass[breakPoint]}` : 'flex-row'} flex-wrap justify-center items-center ${gapClass[gap]}`}>
+        <div className={`flex ${breakPoint ? `flex-col ${breakPointClass[breakPoint]}` : 'flex-row'} flex-wrap justify-center items-center ${gapClass[gap]} ${className}`}>
             {children}
         </div>
     )
