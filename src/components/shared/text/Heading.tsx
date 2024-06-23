@@ -14,7 +14,7 @@ const Heading = ({ type=1, children } : { type : 1 | 2 | 3 | 4 | 5 | 6, children
     ]
 
   return (
-    <HeadingTag className={`${sizes[type - 1]} font-bold text-center my-8`}>
+    <HeadingTag className={`${sizes[type - 1]} font-bold my-6`}>
       {children}
     </HeadingTag>
   )

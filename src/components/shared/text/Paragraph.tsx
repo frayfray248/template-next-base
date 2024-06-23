@@ -2,7 +2,7 @@ import React from 'react'
 
 const Paragraph = ({ children } : { children : React.ReactNode}) => {
   return (
-    <p className='text-center text-lg mb-16'>{children}</p>
+    <p className='text-lg my-4'>{children}</p>
   )
 }
 
