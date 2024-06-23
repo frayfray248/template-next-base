@@ -4,8 +4,8 @@ import Section from '@/components/shared/containers/Section'
 import Image from '@/components/shared/Image'
 import Row from '@/components/shared/containers/Row'
 import Col from '@/components/shared/containers/Col'
-
-//import busyStreet from '@/res/backdrop-placeholder-busy-street-01.jpg'
+import Heading from '@/components/shared/text/Heading'
+import Paragraph from '@/components/shared/text/Paragraph'
 import hairsolon from '@/res/hair-solon.webp'
 
 const InfoBlock = () => {
@@ -13,10 +13,15 @@ const InfoBlock = () => {
         <Section>
             <Row breakPoint='lg'>
                 <Col>
-                    <div className='text-center flex flex-col justify-center items-center pr-4'>
-                        <h1 className="text-5xl font-bold">Box Office News!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
+                    <div className='max-w-2xl mx-auto text-right flex flex-col justify-center items-end p-4'>
+                        <Heading type={2}>About Us</Heading>
+                        <Paragraph>
+                            We are a team of professionals who are dedicated to providing you with the best service possible. We have been in the business for over 20 years and have a wealth of experience in the industry. 
+                            </Paragraph>
+                        <Paragraph>
+                            Our goal is to make sure that you leave our salon feeling confident and beautiful. We offer a wide range of services to meet your needs, from haircuts and color to waxing and facials. Come in and see us today!
+                            </Paragraph>
+                        
                     </div>
                 </Col>
                 {/* <Col>

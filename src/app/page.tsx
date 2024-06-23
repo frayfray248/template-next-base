@@ -49,11 +49,11 @@ export default function Home() {
             <LandingHero />
             <Section height='xs' bgColor='primary-content'>
                 <Row breakPoint='lg' className='w-full text-neutral-content justify-evenly text-center'>
-                    <div className='max-w-xl'>
-                    <Heading type={2}>Your beauty is our duty!</Heading>
-                    <Paragraph>
-                        We are a team of professionals who are dedicated to providing you with the best service possible.
-                    </Paragraph>
+                    <div className='max-w-xl p-4'>
+                        <Heading type={2}>Your beauty is our duty!</Heading>
+                        <Paragraph>
+                            We are a team of professionals who are dedicated to providing you with the best service possible.
+                        </Paragraph>
                     </div>
                     <SocialBar socialMedia={socialMedia} />
                 </Row>

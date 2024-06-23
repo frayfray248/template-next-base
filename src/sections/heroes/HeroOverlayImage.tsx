@@ -17,7 +17,6 @@ const HeroOverlayImage = () => {
             <div className="max-w-2xl">
                 <h1 className="mb-5 text-6xl font-bold">Welcome to Radiant Beauty Salon</h1>
                 <p className="mb-5">Experience the Art of Perfect Hair and Beauty</p>
-                <button className="btn btn-primary">Get Started</button>
             </div>
         </Hero>
     )

@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" data-theme="modernMin">
-            <body className={`min-h-screen flex flex-col ${font}`}>
+            <body className={`relative min-h-screen flex flex-col ${font}`}>
                 <Header />
                 {children}
                 <Footer />
