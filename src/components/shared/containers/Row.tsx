@@ -17,8 +17,16 @@ const Row = ({
         '4': 'gap-4'
     }
 
+    const breakPointClass = {
+        'sm': 'sm:flex-row',
+        'md': 'md:flex-row',
+        'lg': 'lg:flex-row',
+        'xl': 'xl:flex-row',
+        '2xl': '2xl:flex-row'
+    }
+
     return (
-        <div className={`flex ${breakPoint ? `flex-col ${breakPoint}:flex-row` : 'flex-row'} flex-wrap justify-center items-center ${gapClass[gap]}`}>
+        <div className={`flex ${breakPoint ? `flex-col ${breakPointClass[breakPoint]}` : 'flex-row'} flex-wrap justify-center items-center ${gapClass[gap]}`}>
             {children}
         </div>
     )

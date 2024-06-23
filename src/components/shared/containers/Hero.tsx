@@ -17,7 +17,7 @@ const makeBackgroundImageStyle = (bgImage : BackgroundImageData) => {
 
     const backgroundImage = getBackgroundImage(srcSet)
 
-    return { height: '100vh', width: '100vw', backgroundImage }
+    return { height: '100%', width: '100%', backgroundImage }
 
 }
 
