@@ -9,6 +9,7 @@ import Row from '@/components/shared/containers/Row'
 import SocialBar from '@/components/shared/SocialBar'
 import Services from '@/sections/hairsalon/Services'
 import CallToAction from '@/sections/hairsalon/CallToAction'
+import Testimonials from '@/sections/hairsalon/Testimonials'
 
 import { SocialMediaData } from '../../types/types'
 
@@ -59,7 +60,7 @@ export default function Home() {
             <InfoBlock />
             <PictureRow />
             <Services />
-            <CallToAction />
+            <Testimonials />
         </main>
     );
 }

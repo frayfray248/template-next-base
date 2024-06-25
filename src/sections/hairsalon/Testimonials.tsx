@@ -3,34 +3,31 @@ import React from 'react'
 
 // components
 import Section from '@/components/shared/containers/Section'
+import Row from '@/components/shared/containers/Row'
+import Col from '@/components/shared/containers/Col'
+import Heading from '@/components/shared/text/Heading'
+import Quote from '@/components/shared/text/Quote'
+
 
 const Testimonials = () => {
-  return (
-    <Section>
-        <div className="text-center">
-            <h2 className="text-4xl font-bold">Testimonials</h2>
-            <p className="text-lg">What our clients say about us</p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-base-200 p-4 rounded-lg">
-            <p className="text-lg">"I love my new hair! I have never felt so confident in my life. Thank you!"</p>
-            <p className="text-lg font-bold">- Jane Doe</p>
+    return (
+        <Section bgColor='primary-content'>
+            <div className='text-primary text-center'>
+                <Heading type={2}>Testimonials</Heading>
+                <Row className='w-full text-center text-primary'>
+                    <Quote author='Jane'>
+                        I have been coming to ACME Hair Salon for years and I have never been disappointed. The staff is always friendly and professional. I highly recommend them.
+                    </Quote>
+                    <Quote author='Mary'>
+                        I have been going to ACME Hair Salon for years. The staff is always friendly and professional. I highly recommend them.
+                    </Quote>
+                    <Quote author='Sue'>
+                        I have been a customer of ACME Hair Salon for years. The staff is always friendly and professional. I highly recommend them.
+                    </Quote>
+                </Row>
             </div>
-            <div className="bg-base-200 p-4 rounded-lg">
-            <p className="text-lg">"I love my new hair! I have never felt so confident in my life. Thank you!"</p>
-            <p className="text-lg font-bold">- Jane Doe</p>
-            </div>
-            <div className="bg-base-200 p-4 rounded-lg">
-            <p className="text-lg">"I love my new hair! I have never felt so confident in my life. Thank you!"</p>
-            <p className="text-lg font-bold">- Jane Doe</p>
-            </div>
-            <div className="bg-base-200 p-4 rounded-lg">
-            <p className="text-lg">"I love my new hair! I have never felt so confident in my life. Thank you!"</p>
-            <p className="text-lg font-bold">- Jane Doe</p>
-            </div>
-        </div>
-    </Section>
-  )
+        </Section>
+    )
 }
 
 export default Testimonials
