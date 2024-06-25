@@ -1,4 +1,4 @@
-import { Inter, Roboto } from "next/font/google";
+import { Inter, Roboto, Montserrat } from "next/font/google";
 
 const theme = process.env.THEME
 
@@ -11,9 +11,14 @@ const roboto = Roboto({
     weight: ["400", "700"]
 })
 
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    weight: ["400", "400"]
+})
+
 const className = {
     'default' : inter.className,
-    'modernMin' : roboto.className
+    'modernMin' : montserrat.className
 }[theme || 'default']
 
 export default className

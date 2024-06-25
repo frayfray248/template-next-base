@@ -1,18 +1,16 @@
 // components
-import LandingHero from '@/sections/LandingHero';
-import Contact from '@/sections/Contact';
-import Hr from '@/components/shared/Hr';
-import Portfolio from '@/sections/Portfolio';
-import InfoBlock from '@/sections/InfoBlock';
-import PictureRow from '@/sections/PictureRow';
-import Section from '@/components/shared/containers/Section';
-import Paragraph from '@/components/shared/text/Paragraph';
-import Heading from '@/components/shared/text/Heading';
-import Icon from '@/components/shared/Icon';
-import Row from '@/components/shared/containers/Row';
-import SocialBar from '@/components/shared/SocialBar';
+import LandingHero from '@/sections/hairsalon/LandingHero'
+import InfoBlock from '@/sections/hairsalon/InfoBlock'
+import PictureRow from '@/sections/hairsalon/PictureRow'
+import Section from '@/components/shared/containers/Section'
+import Paragraph from '@/components/shared/text/Paragraph'
+import Heading from '@/components/shared/text/Heading'
+import Row from '@/components/shared/containers/Row'
+import SocialBar from '@/components/shared/SocialBar'
+import Services from '@/sections/hairsalon/Services'
+import CallToAction from '@/sections/hairsalon/CallToAction'
 
-import { SocialMediaData } from '../types/types';
+import { SocialMediaData } from '../../types/types'
 
 export default function Home() {
 
@@ -60,7 +58,8 @@ export default function Home() {
             </Section>
             <InfoBlock />
             <PictureRow />
-            <Contact />
+            <Services />
+            <CallToAction />
         </main>
     );
 }

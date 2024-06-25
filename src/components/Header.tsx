@@ -19,7 +19,7 @@ const Header = () => {
                         <Nav.MenuItem text="Item 3" href='#' />
                     </Nav.Menu>
                     </Nav.Dropdown>
-                    <a className="btn btn-ghost text-xl rounded-none">ACME Hair Solon</a>
+                    <a className="btn btn-ghost text-xl rounded-none">ACME Hair Salon</a>
                 </Nav.Start>
 
                 <Nav.Center>

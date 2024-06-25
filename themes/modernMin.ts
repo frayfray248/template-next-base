@@ -22,9 +22,6 @@ const config: Config = {
                 'section-border': '4px',
             }
         },
-        fontFamily: {
-            sans: ['Helvetica Neue', 'Arial', 'sans-serif'], // Simple sans-serif font
-        },
 
     },
     daisyui: {
