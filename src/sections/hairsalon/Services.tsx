@@ -8,7 +8,7 @@ import Paragraph from '@/components/shared/text/Paragraph'
 const Services = () => {
     return (
         <Section>
-            <article className='w-full flex flex-col my-8'>
+            <article className='w-full flex flex-col m-8'>
                 <Heading type={1} className='text-center'>Services</Heading>
                 <Paragraph className='text-center'>We offer a wide range of services to help you look and feel your best.</Paragraph>
                 <Row gap='16' items='start' justify='evenly' className='flex-1'>

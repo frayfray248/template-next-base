@@ -15,13 +15,13 @@ const SocialBar = ({ socialMedia, layout='row' }: { socialMedia: SocialMediaData
         <>
             {
                 layout === 'row' ?
-                    <Row gap='8' className='py-8'>
+                    <Row gap='8' justify='start' >
                         {socialMedia.map((social, index) => (
                             <Icon key={index} type={social.type} href={social.href} />
                         ))}
                     </Row>
                     :
-                    <Col className='flex flex-col gap-8 p-8' >
+                    <Col className='flex flex-col gap-8' >
                         {socialMedia.map((social, index) => (
                             <Icon key={index} type
                                 ={social.type} href={social.href} />
