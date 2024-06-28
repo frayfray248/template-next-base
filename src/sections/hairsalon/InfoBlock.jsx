@@ -11,10 +11,10 @@ import hairsolon from '@/res/hair-solon.webp'
 const InfoBlock = () => {
     return (
         <Section>
-            <Row breakPoint='lg'>
+            <Row breakPoint='md'>
 
-                <Col>
-                    <Image src={hairsolon} alt="A busy street" />
+                <Col stretch={true}>
+                    <Image src={hairsolon} alt="A busy street" className='h-full object-cover' />
                 </Col>
                 <Col>
                     <div className='max-w-2xl mx-auto text-left flex flex-col justify-center items-start p-4'>
