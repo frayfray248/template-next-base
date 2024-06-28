@@ -1,43 +1,59 @@
 'use client'
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
-const Carousel = () => {
-    const images = [
-        "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg",
-        "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg",
-        "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg",
-        "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg",
-        "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg",
-        "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg",
-        "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-    ];
+const CarouselItem = ({ children }: { children: React.ReactElement }) => {
 
+}
+
+const Carousel = ({ children }: { children: React.ReactElement[] }) => {
+
+    // ref
     const carouselRef = useRef(null);
-    const [scrollPosition, setScrollPosition] = useState(0);
+
+    // state
+    const [isOverflowing, setIsOverflowing] = useState(false)
+
+    const checkOverflow = () => {
+
+        const { current } = carouselRef as React.RefObject<HTMLDivElement>
+        if (!current) return
+
+        setIsOverflowing(current.scrollWidth > current.clientWidth)
+
+    };
+
+    useEffect(() => {
+
+        checkOverflow()
+
+        window.addEventListener('resize', checkOverflow)
+
+        return () => {
+            window.removeEventListener('resize', checkOverflow)
+        }
+
+    }, [])
 
     const scroll = (direction: string) => {
         if (carouselRef.current) {
             const { current } = carouselRef as React.RefObject<HTMLDivElement>;
             if (!current) return; // Add this line to handle the case when current is null
-            const scrollAmount = 300; // Adjust based on your item width or desired scroll amount
-            const newScrollPosition = direction === 'left' ? current.scrollLeft - scrollAmount : current.scrollLeft + scrollAmount;
-            current.scrollLeft = newScrollPosition;
-            setScrollPosition(newScrollPosition);
+            const scrollAmount = current.scrollWidth / children.length; // Adjust based on your item width or desired scroll amount
+            const newScrollPosition = direction === 'left' ? current.scrollLeft - scrollAmount : current.scrollLeft + scrollAmount
+            current.scrollLeft = newScrollPosition
         }
     };
 
     return (
-        <div className='relative'>
-        <div className="carousel rounded-box" ref={carouselRef} style={{ display: 'flex', overflowX: 'auto' }}>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-10 top-1/2"><button className="btn btn-circle text-xl" onClick={() => scroll('left')}>❮</button></div>
-            {images.map((image, index) => (
-                <div id={`carousel-item-${index}`} key={index} className="carousel-item" style={{ flex: '0 0 auto' }}>
-                    <img src={image} alt="carousel" />
-                </div>
-            ))}
-            <div className="absolute flex justify-between transform -translate-y-1/2 right-10 top-1/2"><button className="btn btn-circle text-xl" onClick={() => scroll('right')}>❯</button></div>
-        </div>
+        <div className='relative w-full'>
+            <div className="carousel" ref={carouselRef} style={{ display: 'flex', overflowX: 'auto' }}>
+                <div className={`${isOverflowing ? "flex" : "hidden"} absolute  justify-between transform -translate-y-1/2 left-5 top-1/2`}><button className="btn btn-circle btn-sm text-xl opacity-75" onClick={() => scroll('left')}>❮</button></div>
+
+                {children}
+
+                <div className={`${isOverflowing ? "flex" : "hidden"} absolute justify-between transform -translate-y-1/2 right-5 top-1/2`}><button className="btn btn-circle btn-sm text-xl opacity-75" onClick={() => scroll('right')}>❯</button></div>
+            </div>
         </div>
     );
 };
