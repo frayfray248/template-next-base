@@ -13,7 +13,7 @@ const Services = () => {
                 <Paragraph className='text-center'>We offer a wide range of services to help you look and feel your best.</Paragraph>
                 <Row gap='16' items='start' justify='evenly' className='flex-1'>
                     <div>
-                        <Heading type={2}>Hair</Heading>
+                        <Heading type={2} className='text-center'>Hair</Heading>
                         <table className='table'>
                             <tbody>
                                 <tr>
@@ -48,7 +48,7 @@ const Services = () => {
                         </table>
                     </div>
                     <div>
-                        <Heading type={2}>Nail</Heading>
+                        <Heading type={2} className='text-center'>Nail</Heading>
                         <table className='table'>
                             <tbody>
                                 <tr>
@@ -80,7 +80,7 @@ const Services = () => {
                         </table>
                     </div>
                     <div>
-                        <Heading type={2}>Skin</Heading>
+                        <Heading type={2} className='text-center'>Skin</Heading>
                         <table className='table'>
                             <tbody>
                                 <tr>

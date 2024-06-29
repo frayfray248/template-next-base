@@ -11,16 +11,16 @@ import ExampleSocialBar from '@/components/shared/examples/ExampleSocialBar'
 
 const Contact = () => {
     return (
-        <Section >
+        <Section>
             <article className='m-8 flex flex-col justify-center items-center'>
                 <Heading type={2}>Visit Us</Heading>
                 <Paragraph>Feel free to contact us with any questions or concerns you may have. We are here to help you.</Paragraph>
-                <Row breakPoint='lg' gap='16' className='w-full'>
+                <Row breakPoint='md' gap='16' className='w-full'>
 
                     <Col>
                         <div className='max-w-2xl mx-auto flex flex-col justify-center items-end p-4'>
                             <div>
-                                <Heading type={3}>Hours</Heading>
+                                <Heading type={3} className='text-center'>Hours</Heading>
 
                                 <table className='table table-sm w-auto'>
                                     <tbody>
@@ -58,7 +58,7 @@ const Contact = () => {
                         </div>
                     </Col>
                     <Col>
-                        <Heading type={3}>Contact</Heading>
+                        <Heading type={3} className='text-center'>Contact</Heading>
                         <address>
                             <Paragraph size='md'>1234 Main St.</Paragraph>
                             <Paragraph size='md'>Springfield, IL 62701</Paragraph>

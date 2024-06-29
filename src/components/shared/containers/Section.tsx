@@ -47,7 +47,7 @@ const Section = ({
     }
 
     return (
-        <section className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} border-y-section-border mx-auto flex flex-col justify-center items-center p-section-padding relative ${className}`}>
+        <section className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} mx-auto flex flex-col justify-center items-center p-section-padding relative ${className}`}>
             {children}
         </section>
     )

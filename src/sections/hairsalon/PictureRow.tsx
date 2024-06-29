@@ -14,10 +14,10 @@ const PictureRow = () => {
     return (
         <Section width='screen'>
             <Carousel>
-                <Image src={model1} alt="A hair model" className='min-w-48'  />
+                <Image src={model1} alt="A hair model" className='min-w-48' />
                 <Image src={model2} alt="A hair model" className='min-w-48' />
                 <Image src={model3} alt="A hair model" className='min-w-48' />
-                <Image src={model4} alt="A hair model" className='min-w-48'/>
+                <Image src={model4} alt="A hair model" className='min-w-48' />
                 <Image src={model5} alt="A hair model" className='min-w-48' />
             </Carousel>
         </Section >

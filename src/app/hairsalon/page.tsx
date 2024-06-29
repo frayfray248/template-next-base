@@ -21,6 +21,7 @@ export default function Home() {
         <main className="flex-1">
             <LandingHero />
             <Section height='xs' bgColor='primary-content'>
+                <article className='m-8 w-full'>
                 <Row breakPoint='lg' className='w-full text-neutral-content justify-evenly text-center'>
                     <div className='max-w-xl p-4'>
                         <Heading type={2}>Your beauty is our duty!</Heading>
@@ -30,6 +31,7 @@ export default function Home() {
                     </div>
                     <ExampleSocialBar />
                 </Row>
+                </article>
             </Section>
             <InfoBlock />
             <PictureRow />
