@@ -5,13 +5,15 @@ const Section = ({
     width='theme', 
     height='theme',
     bgColor='primary',
-    className=''
+    className='',
+    id=''
 }: { 
     children: React.ReactNode, 
     width? : 'theme' | 'screen' | 'lg' | 'md' | 'sm',
     height? : 'theme' | 'screen' | 'lg' | 'md' | 'sm' | 'xs',
     bgColor? : 'primary' | 'primary-content' | 'secondary' | 'secondary-content' | 'accent' | 'accent-content' | 'neutral' | 'neutral-content',
     className?: string
+    id?: string
 }) => {
 
     const widthClasses = {
@@ -47,7 +49,7 @@ const Section = ({
     }
 
     return (
-        <section className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} mx-auto flex flex-col justify-center items-center p-section-padding relative ${className}`}>
+        <section id={id} className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} mx-auto flex flex-col justify-center items-center p-section-padding relative ${className}`}>
             {children}
         </section>
     )

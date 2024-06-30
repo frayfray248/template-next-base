@@ -11,7 +11,7 @@ import Quote from '@/components/shared/text/Quote'
 
 const Testimonials = () => {
     return (
-        <Section bgColor='primary-content'>
+        <Section id="testimonials" bgColor='primary-content'>
             <div className='text-primary text-center m-8'>
                 <Heading type={2}>Testimonials</Heading>
                 <Row className='w-full text-center text-primary'>

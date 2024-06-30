@@ -10,7 +10,7 @@ import hairsolon from '@/res/hair-solon.webp'
 
 const InfoBlock = () => {
     return (
-        <Section>
+        <Section id="about">
             <Row breakPoint='md'>
 
                 <Col stretch={true}>

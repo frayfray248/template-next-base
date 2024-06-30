@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 // components
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/sections/hairsalon/Header";
+import Footer from '@/sections/hairsalon/Footer'
+
 
 import font from '@/font/font'
 
@@ -18,7 +19,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" data-theme="modernMin">
+        <html lang="en" data-theme="modernMin" className="scroll-smooth">
             <body className={`relative min-h-screen flex flex-col ${font}`}>
                 <Header />
                 {children}

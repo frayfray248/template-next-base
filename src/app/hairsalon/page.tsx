@@ -11,8 +11,6 @@ import Services from '@/sections/hairsalon/Services'
 import HoursAndContact from '@/sections/hairsalon/HoursAndContact'
 import Testimonials from '@/sections/hairsalon/Testimonials'
 
-import { SocialMediaData } from '../../types/types'
-
 export default function Home() {
 
 

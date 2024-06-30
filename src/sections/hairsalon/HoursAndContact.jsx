@@ -11,7 +11,7 @@ import ExampleSocialBar from '@/components/shared/examples/ExampleSocialBar'
 
 const Contact = () => {
     return (
-        <Section>
+        <Section id="contact">
             <article className='m-8 flex flex-col justify-center items-center'>
                 <Heading type={2}>Visit Us</Heading>
                 <Paragraph>Feel free to contact us with any questions or concerns you may have. We are here to help you.</Paragraph>
