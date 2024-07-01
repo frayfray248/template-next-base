@@ -2,54 +2,48 @@ import React from 'react'
 
 const Section = ({ 
     children, 
-    width='theme', 
-    height='theme',
-    bgColor='primary',
+    width='none', 
+    height='none',
+    bgColor='base-100',
     className='',
     id=''
 }: { 
     children: React.ReactNode, 
-    width? : 'theme' | 'screen' | 'lg' | 'md' | 'sm',
-    height? : 'theme' | 'screen' | 'lg' | 'md' | 'sm' | 'xs',
-    bgColor? : 'primary' | 'primary-content' | 'secondary' | 'secondary-content' | 'accent' | 'accent-content' | 'neutral' | 'neutral-content',
+    width? : 'none' | 'full' | 'lg' | 'md' | 'sm',
+    height? : 'none' | 'screen' | 'lg' | 'md' | 'sm' | 'xs',
+    bgColor? : 'base-100' | 'base-200' | 'base-300' | 'neutral',
     className?: string
     id?: string
 }) => {
 
     const widthClasses = {
-        'theme' : 'max-w-section-max-width',
-        'screen': 'w-full',
+        'full': 'w-full',
         'lg': 'max-w-6xl',
         'md': 'max-w-4xl',
-        'sm': 'max-w-xl'
+        'sm': 'max-w-xl',
+        'none': ''
     }
 
     const heightClasses = {
-        'theme' : 'min-h-section-min-height',
         'screen': 'min-h-screen',
         'lg': 'min-h-96',
         'md': 'min-h-80',
         'sm': 'min-h-64',
-        'xs': 'min-h-48'
-    }
-
-    const borderClasses = {
-        'theme' : 'section-border'
+        'xs': 'min-h-48',
+        'none': ''
     }
 
     const backgroundClasses = {
-        'primary' : 'bg-primary',
-        'primary-content' : 'bg-primary-content',
-        'secondary' : 'bg-secondary',
-        'secondary-content' : 'bg-secondary-content',
-        'accent' : 'bg-accent',
-        'accent-content' : 'bg-accent-content',
-        'neutral' : 'bg-neutral',
-        'neutral-content' : 'bg-neutral-content'
+        'base-100': 'bg-base-100',
+        'base-200': 'bg-base-200',
+        'base-300': 'bg-base-300',
+        'neutral': 'bg-neutral'
     }
 
+    const textColorClass = bgColor === 'neutral' ? 'text-neutral-content' : 'text-base-content'
+
     return (
-        <section id={id} className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} mx-auto flex flex-col justify-center items-center p-section-padding relative ${className}`}>
+        <section id={id} className={`${widthClasses[width]} ${heightClasses[height]} ${backgroundClasses[bgColor]} ${textColorClass} mx-auto flex flex-col justify-center items-center relative ${className}`}>
             {children}
         </section>
     )

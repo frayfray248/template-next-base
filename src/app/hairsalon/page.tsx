@@ -1,41 +1,22 @@
 // components
 import LandingHero from '@/sections/hairsalon/LandingHero'
+import Highlight from '@/sections/hairsalon/Highlight'
 import InfoBlock from '@/sections/hairsalon/InfoBlock'
 import PictureRow from '@/sections/hairsalon/PictureRow'
-import Section from '@/components/shared/containers/Section'
-import Paragraph from '@/components/shared/text/Paragraph'
-import Heading from '@/components/shared/text/Heading'
-import Row from '@/components/shared/containers/Row'
-import ExampleSocialBar from '@/components/shared/examples/ExampleSocialBar'
+import Testimonials from '@/sections/hairsalon/Testimonials'
 import Services from '@/sections/hairsalon/Services'
 import HoursAndContact from '@/sections/hairsalon/HoursAndContact'
-import Testimonials from '@/sections/hairsalon/Testimonials'
 
 export default function Home() {
-
-
 
     return (
         <main className="flex-1">
             <LandingHero />
-            <Section height='xs' bgColor='primary-content'>
-                <article className='m-8 w-full'>
-                <Row breakPoint='lg' className='w-full text-neutral-content justify-evenly text-center'>
-                    <div className='max-w-xl p-4'>
-                        <Heading type={2}>Your beauty is our duty!</Heading>
-                        <Paragraph>
-                            We are a team of professionals who are dedicated to providing you with the best service possible.
-                        </Paragraph>
-                    </div>
-                    <ExampleSocialBar />
-                </Row>
-                </article>
-            </Section>
+            <Highlight />
             <InfoBlock />
             <PictureRow />
             <Testimonials />
             <Services />
-            
             <HoursAndContact />
         </main>
     );

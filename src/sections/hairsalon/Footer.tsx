@@ -1,5 +1,7 @@
+// react
 import React from 'react'
 
+// components
 import Foot from '@/components/shared/footer/Footer'
 import Copyright from '@/components/shared/legal/Copyright'
 

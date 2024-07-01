@@ -1,11 +1,12 @@
+// react
 import React from 'react'
 
+// components
 import Section from '@/components/shared/containers/Section'
 import Row from '@/components/shared/containers/Row'
 import Col from '@/components/shared/containers/Col'
 import Heading from '@/components/shared/text/Heading'
 import Paragraph from '@/components/shared/text/Paragraph'
-import Image from '@/components/shared/Image'
 import ExampleSocialBar from '@/components/shared/examples/ExampleSocialBar'
 
 

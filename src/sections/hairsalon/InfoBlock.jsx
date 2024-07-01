@@ -1,5 +1,7 @@
+// react
 import React from 'react'
 
+// components
 import Section from '@/components/shared/containers/Section'
 import Image from '@/components/shared/Image'
 import Row from '@/components/shared/containers/Row'
@@ -25,7 +27,6 @@ const InfoBlock = () => {
                         <Paragraph>
                             Our goal is to make sure that you leave our salon feeling confident and beautiful. We offer a wide range of services to meet your needs, from haircuts and color to waxing and facials. Come in and see us today!
                         </Paragraph>
-
                     </div>
                 </Col>
             </Row>

@@ -1,10 +1,12 @@
+// react
 import React from 'react'
 
+// components
 import Nav from '@/components/shared/nav/NavBar'
 
 const Header = () => {
     return (
-        <header className="navbar bg-base-100 absolute top-5 opacity-95">
+        <header className="navbar bg-base-100 text-base-content absolute top-5 opacity-95">
             <Nav.Bar>
                 <Nav.Start>
                     <Nav.Dropdown>

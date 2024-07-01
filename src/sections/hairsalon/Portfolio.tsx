@@ -1,5 +1,7 @@
+// react
 import React from 'react'
 
+// components
 import Section from '@/components/shared/containers/Section'
 import Heading from '@/components/shared/text/Heading'
 import Paragraph from '@/components/shared/text/Paragraph'
@@ -25,70 +27,6 @@ const Portfolio = () => {
                     <Thumbnail src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" href="#"/>
                     <Thumbnail src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" href="#"/>
                     <Thumbnail src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" href="#"/>
-
-                    {/* <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card>
-                    <Card.Card>
-                        <Card.Image src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
-                        <Card.Content>
-                            <Card.Title>Card Title</Card.Title>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Card.Content>
-                    </Card.Card> */}
                 </Row>
             </article>
         </Section>
